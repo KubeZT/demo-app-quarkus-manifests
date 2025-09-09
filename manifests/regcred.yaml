@@ -5,4 +5,4 @@ metadata:
   namespace: demo
 type: kubernetes.io/dockerconfigjson
 data:
-  .dockerconfigjson: <base64 encoded dockerconfigjson>
+  .dockerconfigjson: eyJhdXRocyI6IHsiaHR0cHM6Ly9yZWdpc3RyeS5uYXZ5Lmt1YmV6dC5jb20iOiB7ImF1dGgiOiAiWVdSdGFXNDZkV05MUlc5V2JUSkZWbkpUTjBSRldWRm5iMWc9In19fQ==
