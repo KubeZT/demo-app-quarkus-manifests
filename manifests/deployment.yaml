@@ -19,7 +19,7 @@ spec:
         - name: regcred-harbor
       containers:
         - name: quarkus
-          image: registry.dev.kubezt.com/ccravens/demo-app-quarkus@sha256:a6ca9ce56cc2243da134545b3ac9e4c6af0ba60029c5fbe3a5f4212f7944f62f
+          image: registry.navy.kubezt.com/ccravens/demo-app-quarkus@sha256:b866927c4ee40b0cbacece75195419aa271a1b52041365ef8b562b66c7b3112a
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
