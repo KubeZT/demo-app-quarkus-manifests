@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app-quarkus
+  namespace: demo
+  labels:
+    app: demo-app-quarkus
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-app-quarkus
+  template:
+    metadata:
+      labels:
+        app: demo-app-quarkus
+    spec:
+      imagePullSecrets:
+        - name: regcred-harbor
+      containers:
+        - name: quarkus
+          image: registry.demo.kubezt.com/demo/demo-app-quarkus
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
